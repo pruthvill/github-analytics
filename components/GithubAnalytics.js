@@ -5,7 +5,6 @@ import BarChart from './BarChart';
 import LineChart from './LineChart';
 import PieChart from './PieChart';
 import ScatterChart from './ScatterChart';
-import UserInfo from './UserInfo'; // Import the UserInfo component
 
 const GithubAnalytics = () => {
   const [username, setUsername] = useState('');
@@ -49,7 +48,6 @@ const GithubAnalytics = () => {
       {error && <p className="text-red-500">{error}</p>}
       {repoData && (
         <>
-          <UserInfo userData={userData} /> {/* Pass userData to UserInfo component */}
           <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4">
               <div className="w-1/2">
